@@ -12,6 +12,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 /********************* HOME *********************/
 
 .home {
@@ -91,4 +96,101 @@ body {
 
 .home .header .banner img {
   padding-top: 30px;
+}
+
+/********************* ABOUT *********************/
+
+.about {
+  background-color: var(--color-primary);
+}
+
+.about .container {
+  display: flex;
+}
+
+.about .timing {
+  position: relative;
+  top: -50px;
+  width: 33%;
+  background-image: url("../images/brush-big.jpg");
+  padding: 20px;
+}
+
+.about .timing .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about .timing .icon-cut {
+  width: 50px;
+}
+
+.about .timing h3 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-primary);
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  font-size: 30px;
+}
+
+.about .timing .text {
+  margin: 10px 0;
+}
+
+.about .timing .text::after {
+  content: "•";
+  display: block;
+  color: #ffffff;
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after {
+  content: "|";
+}
+
+.about .timing .text h4 {
+  color: gray;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.about .timing span {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.about .experience {
+  width: 66%;
+  color: #ffffff;
+  margin-left: 7%;
+  margin-top: 100px;
+}
+
+.about .experience h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.about .experience h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #a38f78;
+  margin: 20px 0px;
+}
+
+.about .experience .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .experience .text p {
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-size: 16px;
 }
